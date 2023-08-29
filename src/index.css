@@ -1,0 +1,375 @@
+
+nav {
+  
+  background: linear-gradient(150deg, #053e0a, #000000, #03691c, #000000);
+  background-size: 900% 900%;
+  animation: gradientAnimation 10s ease infinite;
+  /* width: 2000px; */
+  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  /* box-shadow: 0px 0px 20px rgb(171, 42, 214); */
+  margin-bottom: 1em;
+  height: 20px
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.logo {
+  height: 55px;
+  position: absolute;
+  left:6%;
+  top: 1%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+
+}
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  
+}
+  .search {
+    position: absolute;
+    left:40%
+
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    transition: background-color 0.3s ease, width 0.3s ease;
+  }
+  
+  .search input[type="text"]:focus {
+    background-color: #ffffff;
+    width: 350px;
+  }
+  
+body {
+  background-color: #0056b3;
+}
+
+.button {
+  font-family: 'Anton', sans-serif;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+.second-btn {
+  position: absolute;
+  left: 80%;
+  text-decoration: none; 
+  font-family: 'Anton', sans-serif;
+}
+.second-btn a {
+  text-decoration: none; 
+  color: #ffffff; 
+  margin-left: -0px;
+
+}
+
+/* Advanced Modern Elegant Button */
+
+.button,.second-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  overflow: hidden;
+  background-color:rgba(10, 113, 223, 0);
+}
+
+/* .second-btn a {
+  background: linear-gradient(135deg, #ff73b3, #c85bff);
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+} */
+
+.second-btn:hover ,
+.button:hover {
+  background: linear-gradient(135deg, #116a08, #000000);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.second-btn:active ,
+.button:active {
+  background: linear-gradient(135deg, #116a08, #000000);
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.background {
+  height: 890px;
+  width: 100%; /* Set the width to 100% to cover the entire viewport */
+  position: fixed; /* Use "fixed" instead of "absolute" for the background to stay in place */
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Position it at the left edge of the viewport */
+  z-index: -1; /* Place it behind the content */
+  /* Add any other background-related styling here */
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.pictures{
+  height: 200px;
+  margin-left: 390px;
+  /* object-fit: fill; */
+}
+
+.character-name {
+  margin-left: 490px
+}
+
+.edit-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  margin-right: 2rem;
+  font-size: 1.2em;
+  font-family: monospace;
+  padding: .4em;
+  border-radius: 12px
+
+}
+.edit-btn:hover {
+  background-color: #4b4a4a
+}
+
+.description {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 50px;
+  margin-left: 4em;
+  
+}
+.neo {
+  height: 300px;
+  border-radius: 12px
+}
+.neo-description {
+  margin-left: 1em;
+  height: 100px;
+  font-size: larger;
+}
+.edited-btn, .delete-btn, .back-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 5px;
+  color: white;
+}
+
+.edited-btn {
+  background-color: #65af84;
+}
+
+.delete-btn {
+  background-color: #65af84;
+}
+
+.back-btn {
+  background-color: #65af84;
+}
+
+.Edit {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+}
+
+.Edit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Edit label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.Edit input[type="text"],
+.Edit input[type="checkbox"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.Edit input[type="text"]:focus,
+.Edit input[type="checkbox"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.Edit input[type="submit"] {
+  background-color: #13781d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Edit input[type="submit"]:hover {
+  background-color: #29ae46;
+}
+
+.Edit button {
+  background-color: #13781d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  width: 359px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.Edit button:hover {
+  background-color: #29ae46;
+}
+.Edit a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.Edit a:hover {
+  color: #555;
+}
+
+.New {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+}
+
+.New form {
+  display: flex;
+  flex-direction: column;
+}
+
+.New label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.New input[type="text"],
+.New input[type="checkbox"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.New input[type="text"]:focus,
+.New input[type="checkbox"]:focus {
+  outline: none;
+  border-color: #13781d;;
+}
+
+.New input[type="submit"] {
+  background-color: #13781d;;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.New input[type="submit"]:hover {
+  background-color:#29ae46;
+}
+
+.welcome {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid black; 
+  width: 22ch; 
+  animation: typing 3s steps(15, end), blink-caret 0.75s step-end infinite;
+  margin-left: 535px
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 21.5ch; 
+  }
+  
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
