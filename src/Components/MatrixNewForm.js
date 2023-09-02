@@ -11,7 +11,7 @@ function MatrixNewForm() {
       console.log(newMatrix)
       console.log(`${API}/matrices`)
       axios
-        .matrix(`${API}/matrices`, newMatrix)
+        .post(`${API}/matrices`, newMatrix)
         .then(
           () => {
             navigate(`/matrices`);

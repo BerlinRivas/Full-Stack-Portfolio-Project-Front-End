@@ -11,6 +11,7 @@ import Show from "./Pages/Show";
 
 // COMPONENTS
 import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           </Routes>
         </main>
       </Router>
+      <Footer />
     </div>
   );
 }
