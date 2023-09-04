@@ -39,7 +39,7 @@ function MatrixDetails() {
 
     return (
         <article>
-        <h3>{matrix.name}</h3>
+        <h3 className="name">{matrix.name}</h3>
         <h5>
           <span>
             <img className="neo" src={matrix.url} alt=""></img>

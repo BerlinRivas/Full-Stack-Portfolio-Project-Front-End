@@ -12,12 +12,10 @@ function Matrix({ matrix }) {
         )}
       </td>
       <td>
-        <h1 className="character-name">
-          {matrix.name}
-          
-        </h1>
-        <img className="pictures" src={matrix.url} alt=""></img>
+        <h1 className="character-name">{matrix.name}</h1>
         <h1 className="description"><strong>{matrix.description}</strong></h1>
+
+        <img className="pictures" src={matrix.url} alt=""></img> 
       </td>
       <td>
         <Link className="edit-btn" to={`/matrices/${matrix.id}`}>Edit</Link>

@@ -32,7 +32,7 @@ nav {
   height: 55px;
   position: absolute;
   left:6%;
-  top: 1%;
+  top: 0%;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
 
@@ -75,11 +75,15 @@ nav {
   }
   
 body {
-  background-color: #0056b3;
+  /* background-color: #0056b3; */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 .button {
   font-family: 'Anton', sans-serif;
+  color: white;
 }
 
 .button a {
@@ -91,6 +95,7 @@ body {
   left: 80%;
   text-decoration: none; 
   font-family: 'Anton', sans-serif;
+  color: white;
 }
 .second-btn a {
   text-decoration: none; 
@@ -99,7 +104,7 @@ body {
 
 }
 
-/* Advanced Modern Elegant Button */
+
 
 .button,.second-btn {
   display: inline-flex;
@@ -143,12 +148,11 @@ body {
 
 .background {
   height: 890px;
-  width: 100%; /* Set the width to 100% to cover the entire viewport */
-  position: fixed; /* Use "fixed" instead of "absolute" for the background to stay in place */
-  top: 0; /* Position it at the top of the viewport */
-  left: 0; /* Position it at the left edge of the viewport */
-  z-index: -1; /* Place it behind the content */
-  /* Add any other background-related styling here */
+  width: 100%; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: -1; 
 }
 
 body {
@@ -156,13 +160,18 @@ body {
 }
 
 .pictures{
-  height: 200px;
-  margin-left: 390px;
-  /* object-fit: fill; */
+  height: 150px;
+  margin-left: 20px;
+  object-fit: fill; 
+  margin-top: -0px;
+  /* position: absolute; */
+
 }
 
 .character-name {
-  margin-left: 490px
+  margin-left: 160px;
+  margin-top: -10px;
+  
 }
 
 .edit-btn {
@@ -182,8 +191,18 @@ body {
 
 .description {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  height: 50px;
-  margin-left: 4em;
+  height: 10px;
+  margin-left: 13em;
+  margin-top: 20px;
+  /* position: absolute; */
+  /* padding-top: em; */
+  /* top:-10% */
+  /* left: 30% */
+
+
+  /* position: absolute;
+  left: 50%;
+  top: -50% */
   
 }
 .neo {
@@ -192,8 +211,13 @@ body {
 }
 .neo-description {
   margin-left: 1em;
+  /* margin-top: 10em; */
   height: 100px;
   font-size: larger;
+  color: white;
+}
+.name {
+  color: white;
 }
 .edited-btn, .delete-btn, .back-btn {
   display: inline-block;
@@ -301,6 +325,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #f8f8f8;
+  color: green;
 }
 
 .New form {
@@ -350,7 +375,8 @@ body {
   border-right: 0.15em solid black; 
   width: 22ch; 
   animation: typing 3s steps(15, end), blink-caret 0.75s step-end infinite;
-  margin-left: 535px
+  margin-left: 535px;
+  color: white;
 }
 
 @keyframes typing {
@@ -376,4 +402,42 @@ body {
 .footer {
   background-color: green;
   
+}
+
+
+@media screen and (max-width: 968px) {
+  .container {
+    padding: 10px;
+  }
+  .header {
+    font-size: 24px;
+  }
+  .nav {
+    font-size: 16px;
+  }
+  .content {
+    font-size: 16px;
+  }
+  .footer {
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  .nav {
+    font-size: 14px;
+  }
+  .content {
+    font-size: 14px;
+  }
+  .footer {
+    font-size: 14px;
+  }
 }
